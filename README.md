@@ -1,3 +1,3 @@
-# coloured-wave-trail
+# Customizable Wave Trail
 
-This is where she makes a mod.
+Allows you to easily customize the colour of your wave trail through the mod settings.
