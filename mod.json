@@ -1,7 +1,7 @@
 {
 	"geode": "2.0.0-beta.21",
 	"gd": "2.204",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"id": "capeling.coloured-wave-trail",
 	"name": "Customizable Wave Trail",
 	"developer": "Capeling",
@@ -17,10 +17,15 @@
 			"default": [255, 0, 0],
 			"name": "Player 2 wave trail colour"
 		},
-		"colourEnabled": {
+		"colour1Enabled": {
 			"type": "bool",
 			"default": true,
-			"name": "Change wave trail colour"
+			"name": "Change player 1 wave trail colour"
+		},
+		"colour2Enabled": {
+			"type": "bool",
+			"default": true,
+			"name": "Change player 2 wave trail colour"
 		},
 		"solid": {
 			"type": "bool",

@@ -6,11 +6,14 @@ using namespace geode::prelude;
 class $modify(PlayLayer) {
 	void postUpdate(float dt) {
 		PlayLayer::postUpdate(dt);
-        if(!Mod::get()->getSettingValue<bool>("colourEnabled")) return;
-		auto colour1 = Mod::get()->getSettingValue<ccColor3B>("colour");
-        auto colour2 = Mod::get()->getSettingValue<ccColor3B>("colour2");
-		m_player1->m_waveTrail->setColor(colour1);
-		m_player2->m_waveTrail->setColor(colour2);
+        if(Mod::get()->getSettingValue<bool>("colour1Enabled")) {
+		    auto colour1 = Mod::get()->getSettingValue<ccColor3B>("colour");
+		    m_player1->m_waveTrail->setColor(colour1);      
+        }
+        if(Mod::get()->getSettingValue<bool>("colour2Enabled")) {
+            auto colour2 = Mod::get()->getSettingValue<ccColor3B>("colour2");
+            m_player2->m_waveTrail->setColor(colour2);
+        }
 	}
 };
 
