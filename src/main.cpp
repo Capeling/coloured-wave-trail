@@ -6,6 +6,10 @@ using namespace geode::prelude;
 class $modify(PlayLayer) {
 	void postUpdate(float dt) {
 		PlayLayer::postUpdate(dt);
+
+        m_player1->m_regularTrail->setVisible(true);
+        m_player2->m_regularTrail->setVisible(true);
+
         if(Mod::get()->getSettingValue<bool>("colour1Enabled")) {
 		    auto colour1 = Mod::get()->getSettingValue<ccColor3B>("colour");
 		    m_player1->m_waveTrail->setColor(colour1);      
@@ -14,6 +18,14 @@ class $modify(PlayLayer) {
             auto colour2 = Mod::get()->getSettingValue<ccColor3B>("colour2");
             m_player2->m_waveTrail->setColor(colour2);
         }
+
+        bool hideRegTrail = Mod::get()->getSettingValue<bool>("noDefaultTrail");
+
+        if(m_player1->m_isDart && hideRegTrail)
+            m_player1->m_regularTrail->setVisible(false);
+            
+        if(m_player2->m_isDart && hideRegTrail)
+            m_player2->m_regularTrail->setVisible(false);
 	}
 };
 
