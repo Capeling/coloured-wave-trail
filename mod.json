@@ -1,6 +1,9 @@
 {
 	"geode": "2.0.0-beta.21",
-	"gd": "2.204",
+	"gd": {
+		"win": "2.204",
+		"android": "2.205"
+	},
 	"version": "v1.0.2",
 	"id": "capeling.coloured-wave-trail",
 	"name": "Customizable Wave Trail",
