@@ -29,6 +29,7 @@ class $modify(PlayLayer) {
 	}
 };
 
+#ifndef GEODE_IS_MAC
 bool myDrawCircle(CCDrawNode* ins, CCPoint *verts, unsigned int count, const ccColor4F &fillColor, float borderWidth, const ccColor4F &borderColor) { //thanks TheSillyDoggo (https://github.com/TheSillyDoggo/GeodeMenu/blob/main/src/Hacks/SolidWaveTrail.cpp)
     if (typeinfo_cast<HardStreak*>(ins))
     {
@@ -60,3 +61,4 @@ $execute {
         tulip::hook::TulipConvention::Thiscall
     );
 }
+#endif
