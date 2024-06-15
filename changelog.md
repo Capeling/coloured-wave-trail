@@ -1,3 +1,6 @@
+## v1.1.0
+- Added 2.206 support
+- New mod icon by [Dasshu_](https://twitter.com/DasshuGames)
 ## v1.0.2
 - New setting that hides the default player trail while in the wave gamemode
 ## v1.0.1
