@@ -34,12 +34,12 @@
 		"solid": {
 			"type": "bool",
 			"default": false,
-			"name": "Solid wave trail\nNot available on <cl>MacOS</c>"
+			"name": "Solid wave trail"
 		},
 		"noWave": {
 			"type": "bool",
 			"default": false,
-			"name": "No wave trail\nNot available on <cl>MacOS</c>"
+			"name": "No wave trail"
 		},
 		"noDefaultTrail": {
 			"type": "bool",
