@@ -1,3 +1,5 @@
+## v1.1.1
+- Fixed setting names / descriptions
 ## v1.1.0
 - Added 2.206 support
 - New mod icon by [Dasshu_](https://twitter.com/DasshuGames)
