@@ -1,5 +1,5 @@
 {
-	"geode": "3.0.0-beta.1",
+	"geode": "3.1.1",
 	"gd": {
 		"win": "2.206",
 		"android": "2.206",
@@ -35,13 +35,13 @@
 			"type": "bool",
 			"default": false,
 			"name": "Solid wave trail",
-			"description": "Removes blending from the wave trail\nNot available on <cl>MacOS</c>"
+			"description": "Removes blending from the wave trail"
 		},
 		"noWave": {
 			"type": "bool",
 			"default": false,
 			"name": "No wave trail",
-			"description": "Removes the wave trail\nNot available on <cl>MacOS</c>"
+			"description": "Removes the wave trail"
 		},
 		"noDefaultTrail": {
 			"type": "bool",
