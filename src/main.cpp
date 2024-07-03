@@ -51,7 +51,7 @@ bool myDrawCircle(CCDrawNode* ins, CCPoint *verts, unsigned int count, const ccC
 }
 
 $execute {
-    Mod::get()->hook(
+    (void)Mod::get()->hook(
         reinterpret_cast<void*>(
             geode::addresser::getNonVirtual(&HardStreak::drawPolygon)
         ),
