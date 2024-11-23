@@ -1,3 +1,5 @@
+## v1.1.2
+- Update to 2.2074
 ## v1.1.1
 - Fixed setting names / descriptions
 ## v1.1.0
