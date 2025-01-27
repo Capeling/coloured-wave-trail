@@ -1,15 +1,15 @@
 {
-	"geode": "3.0.0-beta.1",
+	"geode": "4.2.0",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
 	},
-	"version": "v1.1.1",
+	"version": "v1.1.2",
 	"id": "capeling.coloured-wave-trail",
 	"name": "Customizable Wave Trail",
 	"developer": "Capeling",
-	"description": "Allows you to easily customize the your wave trail through the mod settings.",
+	"description": "Allows you to customize the wave trail.",
 	"settings": {
 		"colour": {
 			"type": "color",
@@ -35,13 +35,21 @@
 			"type": "bool",
 			"default": false,
 			"name": "Solid wave trail",
-			"description": "Removes blending from the wave trail\nNot available on <cl>MacOS</c>"
+			"description": "Removes blending from the wave trail",
+			"platforms": [
+				"win",
+				"android"
+			]
 		},
 		"noWave": {
 			"type": "bool",
 			"default": false,
 			"name": "No wave trail",
-			"description": "Removes the wave trail\nNot available on <cl>MacOS</c>"
+			"description": "Removes the wave trail",
+			"platforms": [
+				"win",
+				"android"
+			]
 		},
 		"noDefaultTrail": {
 			"type": "bool",

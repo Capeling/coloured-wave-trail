@@ -1,3 +1,6 @@
+## v1.1.2
+- Update for 2.207
+- Optimizations
 ## v1.1.1
 - Fixed setting names / descriptions
 ## v1.1.0
