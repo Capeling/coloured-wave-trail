@@ -16,6 +16,7 @@ ModManager::ModManager() {
     m_color2Enabled = mod->getSettingValue<bool>("colour2Enabled");
     m_noWave = mod->getSettingValue<bool>("noWave");
     m_noDefaultTrail = mod->getSettingValue<bool>("noDefaultTrail");
+    m_solid = mod->getSettingValue<bool>("solid");
 }
 
 $on_mod(Loaded) {
@@ -43,5 +44,9 @@ $on_mod(Loaded) {
     
     listenForSettingChanges("noDefaultTrail", [mm](bool val) {
         mm->m_noDefaultTrail = val;
+    });
+    
+    listenForSettingChanges("solid", [mm](bool val) {
+        mm->m_solid = val;
     });
 }
