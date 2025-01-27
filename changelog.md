@@ -1,6 +1,7 @@
 ## v1.1.2
 - Update for 2.207
 - Optimizations
+- Added a button to open the settings in the pause menu
 ## v1.1.1
 - Fixed setting names / descriptions
 ## v1.1.0

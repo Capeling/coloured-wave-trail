@@ -10,6 +10,11 @@
 	"name": "Customizable Wave Trail",
 	"developer": "Capeling",
 	"description": "Allows you to customize the wave trail.",
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	},
 	"settings": {
 		"colour": {
 			"type": "color",
