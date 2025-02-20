@@ -43,4 +43,6 @@ void HookPlayerObject::toggleDartMode(bool p0, bool p1) {
         m_regularTrail->setVisible(false);
     else
         m_regularTrail->setVisible(true);
+
+    updateStreak();
 }

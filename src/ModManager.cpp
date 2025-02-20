@@ -52,4 +52,17 @@ $on_mod(Loaded) {
     listenForSettingChanges("solid", [mm](bool val) {
         mm->m_solid = val;
     });
+
+    listenForAllSettingChanges([](std::shared_ptr<SettingV3> setting) {
+        if(!PlayLayer::get())
+            return;
+
+        auto p1 = static_cast<HookPlayerObject*>(PlayLayer::get()->m_player1);
+        auto p2 = static_cast<HookPlayerObject*>(PlayLayer::get()->m_player2);
+
+        if(p1 && p2) {
+            p1->updateStreak();
+            p2->updateStreak();
+        }
+    });
 }
