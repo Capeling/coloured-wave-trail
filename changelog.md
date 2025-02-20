@@ -1,3 +1,5 @@
+## v1.1.4
+- Mod previews support
 ## v1.1.3
 - Rewrite
 ## v1.1.2
