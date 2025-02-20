@@ -40,21 +40,13 @@
 			"type": "bool",
 			"default": false,
 			"name": "Solid wave trail",
-			"description": "Removes blending from the wave trail",
-			"platforms": [
-				"win",
-				"android"
-			]
+			"description": "Removes blending from the wave trail"
 		},
 		"noWave": {
 			"type": "bool",
 			"default": false,
 			"name": "No wave trail",
-			"description": "Removes the wave trail",
-			"platforms": [
-				"win",
-				"android"
-			]
+			"description": "Removes the wave trail"
 		},
 		"noDefaultTrail": {
 			"type": "bool",

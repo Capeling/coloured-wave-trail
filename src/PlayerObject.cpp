@@ -8,6 +8,7 @@ void HookPlayerObject::resetStreak() {
 
 void HookPlayerObject::updateStreak() {
     auto mm = ModManager::sharedState();
+    auto gm = GameManager::get();
     m_waveTrail->m_isSolid = mm->m_solid;
 
     if(mm->m_noWave) {
@@ -25,9 +26,13 @@ void HookPlayerObject::updateStreak() {
     if(m_isSecondPlayer) {
         if(mm->m_color2Enabled)
             m_waveTrail->setColor(mm->m_color2);
+        else
+            m_waveTrail->setColor(gm->colorForIdx(gm->getPlayerColor2()));
     } else {
         if(mm->m_color1Enabled)
             m_waveTrail->setColor(mm->m_color1);
+        else
+            m_waveTrail->setColor(gm->colorForIdx(gm->getPlayerColor()));
     }
 }
 
