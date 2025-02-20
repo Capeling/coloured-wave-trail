@@ -6,7 +6,7 @@ class ModManager {
 public:
     static ModManager* sharedState();
 
-    ModManager();
+    void load();
 
     cocos2d::ccColor3B m_color1;
     cocos2d::ccColor3B m_color2;

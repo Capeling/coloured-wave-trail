@@ -9,6 +9,7 @@ project(coloured-wave-trail VERSION 1.0.0)
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
     src/ModManager.cpp
+    src/PlayerObject.cpp
     # Add your cpp files here
 )
 

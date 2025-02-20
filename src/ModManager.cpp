@@ -1,4 +1,5 @@
 #include "ModManager.hpp"
+#include "PlayerObject.hpp"
 
 using namespace geode::prelude;
 
@@ -7,9 +8,9 @@ ModManager* ModManager::sharedState() {
     return &instance;
 }
 
-ModManager::ModManager() {
+void ModManager::load() {
     auto mod = Mod::get();
-
+    
     m_color1 = mod->getSettingValue<ccColor3B>("colour");
     m_color2 = mod->getSettingValue<ccColor3B>("colour2");
     m_color1Enabled = mod->getSettingValue<bool>("colour1Enabled");
@@ -17,10 +18,12 @@ ModManager::ModManager() {
     m_noWave = mod->getSettingValue<bool>("noWave");
     m_noDefaultTrail = mod->getSettingValue<bool>("noDefaultTrail");
     m_solid = mod->getSettingValue<bool>("solid");
+
 }
 
 $on_mod(Loaded) {
     auto mm = ModManager::sharedState();
+    mm->load();
     
     listenForSettingChanges("colour", [mm](ccColor3B val) {
         mm->m_color1 = val;
